@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Create Profile - SquadSync</title>
+    <link rel="stylesheet" href="login-style.css">
+</head>
+<body class="profile-page">
+
+    <!-- ============================== -->
+    <!-- 1. TOP NAVIGATION BAR          -->
+    <!-- ============================== -->
+    <header class="top-nav">
+        
+        <!-- Left: User Profile Dropdown & Brand -->
+        <div class="nav-left">
+            
+            <!-- User Profile Dropdown -->
+            <div class="profile-dropdown">
+                <!-- The clickable logo/icon -->
+                <div class="profile-icon" id="profile-icon">
+                    <img src="images/meliodas.png" alt="User Profile">
+                </div>
+                
+                <!-- The hidden menu that appears when clicked -->
+                <div class="dropdown-menu hidden" id="dropdown-menu">
+                   <a href="userProfile.html">👤 User Profile</a>
+                    <a href="library.html">📚 Library</a>
+                   <a href="settings.html">⚙️ Settings</a>
+                    <div class="dropdown-divider"></div>
+                    <a href="Login.html" class="logout-link">🚪 Logout</a>
+                </div>
+            </div>
+
+            <!-- Brand Name -->
+            <span class="nav-brand">SquadSync</span>
+        </div>
+
+        <!-- Center: Navigation Links -->
+        <div class="nav-center">
+            <a href="profile.html">HOME</a>
+            <a href="about.html">ABOUT</a>
+            <a href="lobby.html" class="active">LOBBY</a>
+            <a href="findmatch.html">FIND MATCH</a>
+            <a href="chat.html">CHAT</a>
+        </div>
+
+        <!-- Right: Empty div to keep the center links perfectly centered -->
+        <div class="nav-right">
+        </div>
+
+    </header>
+
+    <!-- ============================== -->
+    <!-- 2. MAIN CONTENT (Glass Card)   -->
+    <!-- ============================== -->
+    <main class="hero-section">
+        <div class="glass-card">
+            <h1>Create Your Vibe Profile</h1>
+            <p>Step into the Squad — tell us how you play so we can find your perfect match.</p>
+            
+            <form id="profile-form">
+            <label for="username">Gamer Tag (Username):</label>
+            <input type="text" id="username" placeholder="e.g., ShadowSlayer99" required>
+
+            <label for="game">Favourite Game:</label>
+            <select id="game" required>
+                <option value="">-- Select a Game --</option>
+                <option value="Seven Deadly Sins">Seven Deadly Sins</option>
+                <option value="FC 27">FC 27</option>
+                <option value="Devil May Cry 5">Devil May Cry 5</option>
+                <option value="Dragon Ball Sparkling Zero">Dragon Ball Sparkling Zero</option>
+                <option value="Fortnite">Fortnite</option>
+                <option value="Mortal Kombat 11">Mortal Kombat 11</option>
+                <option value="Call Of Duty Black Opps 3">Call Of Duty Black Opps 3</option>
+                <option value="Apex Legends">Apex Legends</option>
+                <option value="Tekken 8">Tekken 8</option>
+                <option value="Need For Speed: Most Wanted">Need For Speed: Most Wanted</option>
+            </select>
+
+            <label for="platform">Platform:</label>
+            <select id="platform" required>
+                <option value="">-- Select Platform --</option>
+                <option value="PC">PC</option>
+                <option value="PlayStation">PlayStation</option>
+                <option value="Xbox">Xbox</option>
+            </select>
+
+            <label for="mic">Do you use a microphone?</label>
+            <select id="mic" required>
+                <option value="Yes">Yes, I love to talk!</option>
+                <option value="No">No, text chat only please.</option>
+            </select>
+
+            <label>Select Your Availability (Click the boxes):</label>
+            <div class="availability-grid" id="availability-grid">
+                <div class="day-slot" data-day="Mon">Mon</div>
+                <div class="day-slot" data-day="Tue">Tue</div>
+                <div class="day-slot" data-day="Wed">Wed</div>
+                <div class="day-slot" data-day="Thu">Thu</div>
+                <div class="day-slot" data-day="Fri">Fri</div>
+                <div class="day-slot" data-day="Sat">Sat</div>
+                <div class="day-slot" data-day="Sun">Sun</div>
+            </div>
+
+            <button type="submit" class="btn-purple" style="width: 100%;">Save Profile</button>
+</form>
+            <p id="profile-message" class="hidden" style="text-align:center; margin-top:15px; color:#50E3C2;">Profile Saved! Redirecting...</p>
+        </div>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>

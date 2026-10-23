@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About - SquadSync</title>
+    <link rel="stylesheet" href="login-style.css">
+</head>
+<body class="profile-page about-page">
+
+    <header class="top-nav">
+        
+        <!-- Left: User Profile Dropdown & Brand -->
+        <div class="nav-left">
+            
+            <!-- User Profile Dropdown -->
+            <div class="profile-dropdown">
+                <!-- The clickable logo/icon -->
+                <div class="profile-icon" id="profile-icon">
+                    <img src="images/meliodas.png" alt="User Profile">
+                </div>
+                
+                <!-- The hidden menu that appears when clicked -->
+                <div class="dropdown-menu hidden" id="dropdown-menu">
+                   <a href="userProfile.html">👤 User Profile</a>
+                    <a href="library.html">📚 Library</a>
+                   <a href="settings.html">⚙️ Settings</a>
+                    <div class="dropdown-divider"></div>
+                    <a href="Login.html" class="logout-link">🚪 Logout</a>
+                </div>
+            </div>
+
+            <!-- Brand Name -->
+            <span class="nav-brand">SquadSync</span>
+        </div>
+
+        <!-- Center: Navigation Links -->
+        <div class="nav-center">
+            <a href="profile.html">HOME</a>
+            <a href="about.html">ABOUT</a>
+            <a href="lobby.html" class="active">LOBBY</a>
+            <a href="findmatch.html">FIND MATCH</a>
+            <a href="chat.html">CHAT</a>
+        </div>
+
+        <!-- Right: Empty div to keep the center links perfectly centered -->
+        <div class="nav-right">
+        </div>
+
+    </header>
+
+    <main class="hero-section">
+        <div class="glass-card" style="max-width: 800px;">
+            <h1>About SquadSync</h1>
+            <p>Where every gamer finds their perfect squad.</p>
+
+            <div class="about-section">
+                <h3>🎯 Our Mission</h3>
+                <p>SquadSync was built to solve a real problem: finding friendly, non-toxic gamers to play with. No more joining random lobbies with strangers. No more awkward Discord servers. Just real matches based on your vibe.</p>
+            </div>
+
+            <div class="about-section">
+                <h3>⚙️ How It Works</h3>
+                <p>Create your Vibe Profile, select your favourite game, tell us whether you prefer voice chat or text, and pick the days you're available. Our matchmaking system pairs you with students who share the same playstyle and schedule.</p>
+            </div>
+
+            <div class="about-section">
+                <h3>🛡️ Safety First</h3>
+                <p>Every user verifies their student email address. Our reporting system keeps the community safe. We don't track followers or popularity — just good matches with good people.</p>
+            </div>
+
+            <div class="about-section">
+                <h3>💜 Our Values</h3>
+                <p>Inclusion, empathy, and respect. Whether you're a competitive ranked player or a casual explorer, there's a squad waiting for you.</p>
+            </div>
+
+            <a href="findmatch.html" style="text-decoration: none;">
+                <button class="btn-purple" style="width: 100%; margin-top: 20px;">Find Your Squad Now</button>
+            </a>
+        </div>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>

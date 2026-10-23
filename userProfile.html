@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User Profile - SquadSync</title>
+    <link rel="stylesheet" href="login-style.css">
+</head>
+<body class="profile-page user-profile-bg">
+
+    <!-- ============================== -->
+    <!-- FLOATING BACK BUTTON           -->
+    <!-- ============================== -->
+    <div class="floating-back-btn" id="back-to-login" title="Go back">
+    <img src="images/meliodas.png" alt="Back">
+</div>
+<div class="back-hint">← GO BACK</div>
+
+    <!-- ============================== -->
+    <!-- USER PROFILE CONTENT           -->
+    <!-- ============================== -->
+    <main class="user-profile-main">
+
+        <!-- 1. Player Banner -->
+        <div class="profile-banner glass-card">
+            <div class="banner-avatar">
+                <img src="images/sung.png" alt="User Avatar">
+                <div class="online-dot"></div>
+            </div>
+            <div class="banner-info">
+                <h1 id="profile-username">Almightysethu</h1>
+                <p class="banner-tagline">!!!WHY SO SERIOUS!!!</p>
+                <div class="banner-badges">
+                    <span class="badge">🏆 Ranked Player</span>
+                    <span class="badge">🎯 Verified Student</span>
+                    <span class="badge">💜 Member Since 2024</span>
+                </div>
+            </div>
+        </div>
+
+        <!-- 2. Game Selector -->
+        <div class="game-selector">
+            <label for="game-select">View stats for:</label>
+            <select id="game-select">
+<option value="Seven Deadly Sins">Seven Deadly Sins</option>
+                    <option value="FC 27">FC27</option>
+                    <option value="Devil May Cry 5">Devil May Cry 5</option>
+                    <option value="Fortnite">Fortnite</option>
+                    <option value="Call Of Duty Black Opps 3">Call Of Duty Black Opps 3</option>
+                    <option value="Apex Legends">Apex Legends</option>
+                    <option value="Tekken 8">Tekken 8</option>
+                    <option value="Need For Speed: Most Wanted">Need For Speed: Most Wanted</option>
+            </select>
+        </div>
+
+        <!-- 3. Stats Grid -->
+        <div class="stats-grid">
+
+            <!-- Level Card -->
+            <div class="stat-card glass-card">
+                <div class="stat-icon">⭐</div>
+                <h3>Level</h3>
+                <div class="stat-value">
+                    <span id="level-number">42</span>
+                    <span class="stat-unit">/ 100</span>
+                </div>
+                <div class="mini-progress">
+                    <div class="mini-progress-fill" id="level-progress" style="width: 42%;"></div>
+                </div>
+                <p class="stat-caption" id="level-caption">58 levels to Master rank</p>
+            </div>
+
+            <!-- Hours Played Card -->
+            <div class="stat-card glass-card">
+                <div class="stat-icon">⏱️</div>
+                <h3>Hours Played</h3>
+                <div class="stat-value">
+                    <span id="hours-number">247</span>
+                    <span class="stat-unit">hrs</span>
+                </div>
+                <div class="mini-progress">
+                    <div class="mini-progress-fill" id="hours-progress" style="width: 65%;"></div>
+                </div>
+                <p class="stat-caption" id="hours-caption">More active than 65% of players</p>
+            </div>
+
+            <!-- Achievements Card -->
+            <div class="stat-card glass-card">
+                <div class="stat-icon">🏆</div>
+                <h3>Achievements</h3>
+                <div class="stat-value">
+                    <span id="achievements-number">38</span>
+                    <span class="stat-unit">/ 60</span>
+                </div>
+                <div class="mini-progress">
+                    <div class="mini-progress-fill" id="achievements-progress" style="width: 63%;"></div>
+                </div>
+                <p class="stat-caption" id="achievements-caption">22 achievements remaining</p>
+            </div>
+
+        </div>
+
+        <!-- 4. Recent Achievements List -->
+        <div class="recent-achievements glass-card">
+            <h2>Recent Achievements</h2>
+            <div class="achievement-list" id="achievement-list">
+                <!-- Filled by JavaScript -->
+            </div>
+        </div>
+
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lobby - SquadSync</title>
+    <link rel="stylesheet" href="login-style.css">
+</head>
+<body class="profile-page lobby-page">
+
+    <header class="top-nav">
+        <div class="nav-left">
+            <div class="profile-dropdown">
+                <div class="profile-icon" id="profile-icon">
+                    <img src="images/meliodas.png" alt="User Profile">
+                </div>
+                <div class="dropdown-menu hidden" id="dropdown-menu">
+                    <a href="userProfile.html">👤 User Profile</a>
+                    <a href="library.html">📚 Library</a>
+                   <a href="settings.html">⚙️ Settings</a>
+                    <div class="dropdown-divider"></div>
+                    <a href="Login.html" class="logout-link">🚪 Logout</a>
+                </div>
+            </div>
+            <span class="nav-brand">SquadSync</span>
+        </div>
+
+        <div class="nav-center">
+            <a href="profile.html">HOME</a>
+            <a href="about.html">ABOUT</a>
+            <a href="lobby.html" class="active">LOBBY</a>
+            <a href="findmatch.html">FIND MATCH</a>
+            <a href="chat.html">CHAT</a>
+        </div>
+
+        <div class="nav-right"></div>
+    </header>
+
+    <main class="lobby-main">
+        <div class="lobby-container">
+            
+            <!-- LEFT: Player Card -->
+            <div class="player-card glass-card">
+                <div class="player-avatar-large">
+                    <img src="images/meliodas.png" alt="Your Avatar">
+                </div>
+                <h2 id="lobby-username">Loading...</h2>
+                <p id="lobby-game" class="player-tag">Game: Loading...</p>
+                <p id="lobby-platform" class="player-tag">Platform: Loading...</p>
+                <p id="lobby-mic" class="player-tag">Mic: Loading...</p>
+                <div class="ready-status">
+                    <span class="dot"></span> READY
+                </div>
+            </div>
+
+            <!-- RIGHT: Squad Slots -->
+            <div class="squad-area">
+                <h2 class="squad-title">YOUR SQUAD <span id="squad-count">(1/4)</span></h2>
+                
+                <div class="squad-grid">
+                    <div class="squad-slot filled">
+                        <div class="slot-icon">✅</div>
+                        <p class="slot-name" id="slot-you">You</p>
+                        <p class="slot-status">Ready</p>
+                    </div>
+
+                    <div class="squad-slot empty" id="slot-2">
+                        <div class="slot-icon">➕</div>
+                        <p class="slot-name">Empty</p>
+                        <p class="slot-status">Waiting...</p>
+                    </div>
+
+                    <div class="squad-slot empty" id="slot-3">
+                        <div class="slot-icon">➕</div>
+                        <p class="slot-name">Empty</p>
+                        <p class="slot-status">Waiting...</p>
+                    </div>
+
+                    <div class="squad-slot empty" id="slot-4">
+                        <div class="slot-icon">➕</div>
+                        <p class="slot-name">Empty</p>
+                        <p class="slot-status">Waiting...</p>
+                    </div>
+                </div>
+
+                <div class="lobby-action-area">
+                    <p id="lobby-status-text" class="lobby-status">Press X to Ready Up</p>
+                    <button id="find-match-btn" class="btn-ready">X</button>
+                </div>
+            </div>
+
+        </div>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>

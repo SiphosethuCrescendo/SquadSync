@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Game Details - SquadSync</title>
+    <link rel="stylesheet" href="login-style.css">
+</head>
+<body class="profile-page user-profile-bg">
+
+    <!-- ============================== -->
+    <!-- TOP NAVIGATION BAR             -->
+    <!-- ============================== -->
+    <header class="top-nav">
+        <div class="nav-left">
+            <div class="profile-dropdown">
+                <div class="profile-icon" id="profile-icon">
+                    <img src="images/meliodas.png" alt="User Profile">
+                </div>
+                <div class="dropdown-menu hidden" id="dropdown-menu">
+                    <a href="userprofile.html">👤 User Profile</a>
+                    <a href="library.html">📚 Library</a>
+                    <a href="settings.html">⚙️ Settings</a>
+                    <div class="dropdown-divider"></div>
+                    <a href="Login.html" class="logout-link">🚪 Logout</a>
+                </div>
+            </div>
+            <span class="nav-brand">SquadSync</span>
+        </div>
+
+        <div class="nav-center">
+            <a href="profile.html">HOME</a>
+            <a href="about.html">ABOUT</a>
+            <a href="lobby.html">LOBBY</a>
+            <a href="findmatch.html">FIND MATCH</a>
+            <a href="chat.html">CHAT</a>
+        </div>
+
+        <div class="nav-right"></div>
+    </header>
+
+    <!-- ============================== -->
+    <!-- GAME DETAIL PAGE               -->
+    <!-- ============================== -->
+    <main class="gamedetail-main">
+
+        <a href="library.html" class="back-to-library">← Back to Library</a>
+
+        <!-- Game Hero Image -->
+        <div class="gamedetail-hero">
+            <img id="game-hero-image" src="images/dbz.jpg" alt="Game Hero">
+            <div class="gamedetail-hero-overlay">
+                <h1 id="game-title">Loading...</h1>
+                <p id="game-tagline" class="game-tagline">Loading...</p>
+            </div>
+        </div>
+
+        <!-- Video Trailer -->
+        <div class="gamedetail-video glass-card">
+            <h2>🎬 Gameplay Trailer</h2>
+            <div class="video-wrapper">
+                <iframe id="game-video" 
+                        src="https://www.youtube.com/embed/9dQZtY8NsrA" 
+                        title="Game Trailer"
+                        frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                        allowfullscreen>
+                </iframe>
+            </div>
+        </div>
+
+        <!-- Game Description -->
+        <div class="gamedetail-description glass-card">
+            <h2>📖 About This Game</h2>
+            <p id="game-description">Loading description...</p>
+            
+            <div class="game-tags" id="game-tags"></div>
+        </div>
+
+        <!-- Launch Button -->
+        <div class="gamedetail-launch">
+            <button class="btn-purple" id="launch-btn" style="padding: 18px 80px; font-size: 1.3rem;">
+                🚀 Launch Game
+            </button>
+            <p class="launch-note">Launching will open the SquadSync lobby with this game pre-selected.</p>
+        </div>
+
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>

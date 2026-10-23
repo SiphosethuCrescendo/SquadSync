@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Settings - SquadSync</title>
+    <link rel="stylesheet" href="login-style.css">
+</head>
+<body class="profile-page user-profile-bg">
+
+    <!-- ============================== -->
+    <!-- TOP NAVIGATION BAR             -->
+    <!-- ============================== -->
+    <header class="top-nav">
+        <div class="nav-left">
+            <div class="profile-dropdown">
+                <div class="profile-icon" id="profile-icon">
+                    <img src="images/meliodas.png" alt="User Profile">
+                </div>
+                <div class="dropdown-menu hidden" id="dropdown-menu">
+                    <a href="userprofile.html">👤 User Profile</a>
+                    <a href="library.html">📚 Library</a>
+                    <a href="settings.html">⚙️ Settings</a>
+                    <div class="dropdown-divider"></div>
+                    <a href="Login.html" class="logout-link">🚪 Logout</a>
+                </div>
+            </div>
+            <span class="nav-brand">SquadSync</span>
+        </div>
+
+        <div class="nav-center">
+            <a href="profile.html">HOME</a>
+            <a href="about.html">ABOUT</a>
+            <a href="lobby.html">LOBBY</a>
+            <a href="findmatch.html">FIND MATCH</a>
+            <a href="chat.html">CHAT</a>
+        </div>
+
+        <div class="nav-right"></div>
+    </header>
+
+    <!-- ============================== -->
+    <!-- SETTINGS PAGE                  -->
+    <!-- ============================== -->
+    <main class="settings-main">
+
+        <!-- Page Header -->
+        <div class="settings-header">
+            <h1>⚙️ Settings</h1>
+            <p>Manage your account, preferences, and privacy.</p>
+        </div>
+
+        <!-- Settings Grid -->
+        <div class="settings-grid">
+
+            <!-- Section 1: Account Settings -->
+            <div class="settings-section glass-card">
+                <h2>👤 Account</h2>
+                <p class="section-desc">Update your public profile information.</p>
+
+                <div class="setting-row">
+                    <label for="settings-username">Display Name</label>
+                    <input type="text" id="settings-username" placeholder="Your username">
+                </div>
+
+                <div class="setting-row">
+                    <label for="settings-email">Email Address</label>
+                    <input type="email" id="settings-email" placeholder="you@student.edu">
+                </div>
+            </div>
+
+            <!-- Section 2: Game Preferences -->
+            <div class="settings-section glass-card">
+                <h2>🎮 Game Preferences</h2>
+                <p class="section-desc">Default settings for matchmaking.</p>
+
+                <div class="setting-row">
+                    <label for="settings-game">Favourite Game</label>
+                    <select id="settings-game">
+                        <option value="">-- Select a Game --</option>
+                        <option value="Valorant">Valorant</option>
+                        <option value="Minecraft">Minecraft</option>
+                        <option value="League of Legends">League of Legends</option>
+                        <option value="Apex Legends">Apex Legends</option>
+                    </select>
+                </div>
+
+                <div class="setting-row">
+                    <label for="settings-platform">Preferred Platform</label>
+                    <select id="settings-platform">
+                        <option value="">-- Select Platform --</option>
+                        <option value="PC">PC</option>
+                        <option value="PlayStation">PlayStation</option>
+                        <option value="Xbox">Xbox</option>
+                    </select>
+                </div>
+
+                <div class="setting-row">
+                    <label for="settings-mic">Microphone Preference</label>
+                    <select id="settings-mic">
+                        <option value="Yes">Yes, I love to talk!</option>
+                        <option value="No">No, text chat only please.</option>
+                    </select>
+                </div>
+            </div>
+
+            <!-- Section 3: Notifications (Toggle Switches) -->
+            <div class="settings-section glass-card">
+                <h2>🔔 Notifications</h2>
+                <p class="section-desc">Choose what alerts you receive.</p>
+
+                <div class="toggle-row">
+                    <div class="toggle-label">
+                        <span>Match Found Alerts</span>
+                        <small>Get notified when a new squad match is available.</small>
+                    </div>
+                    <label class="switch">
+                        <input type="checkbox" id="toggle-matches" checked>
+                        <span class="slider"></span>
+                    </label>
+                </div>
+
+                <div class="toggle-row">
+                    <div class="toggle-label">
+                        <span>Chat Messages</span>
+                        <small>Receive notifications for new squad messages.</small>
+                    </div>
+                    <label class="switch">
+                        <input type="checkbox" id="toggle-chat" checked>
+                        <span class="slider"></span>
+                    </label>
+                </div>
+
+                <div class="toggle-row">
+                    <div class="toggle-label">
+                        <span>Weekly Summary</span>
+                        <small>A weekly email with your activity and achievements.</small>
+                    </div>
+                    <label class="switch">
+                        <input type="checkbox" id="toggle-weekly">
+                        <span class="slider"></span>
+                    </label>
+                </div>
+            </div>
+
+            <!-- Section 4: Privacy (Toggle Switches) -->
+            <div class="settings-section glass-card">
+                <h2>🛡️ Privacy</h2>
+                <p class="section-desc">Control how other players see you.</p>
+
+                <div class="toggle-row">
+                    <div class="toggle-label">
+                        <span>Public Profile</span>
+                        <small>Let other players view your stats and achievements.</small>
+                    </div>
+                    <label class="switch">
+                        <input type="checkbox" id="toggle-public" checked>
+                        <span class="slider"></span>
+                    </label>
+                </div>
+
+                <div class="toggle-row">
+                    <div class="toggle-label">
+                        <span>Show Online Status</span>
+                        <small>Display when you're online to your squad.</small>
+                    </div>
+                    <label class="switch">
+                        <input type="checkbox" id="toggle-online" checked>
+                        <span class="slider"></span>
+                    </label>
+                </div>
+
+                <div class="toggle-row">
+                    <div class="toggle-label">
+                        <span>Allow Squad Invites</span>
+                        <small>Let other players send you squad invitations.</small>
+                    </div>
+                    <label class="switch">
+                        <input type="checkbox" id="toggle-invites" checked>
+                        <span class="slider"></span>
+                    </label>
+                </div>
+            </div>
+
+        </div>
+
+        <!-- Save Button -->
+        <div class="settings-actions">
+            <button class="btn-purple" id="save-settings-btn">💾 Save Settings</button>
+            <p id="settings-message" class="settings-saved hidden">✅ Settings saved successfully!</p>
+        </div>
+
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>

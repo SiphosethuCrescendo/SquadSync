@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Order Now - SquadSync</title>
+    <link rel="stylesheet" href="login-style.css">
+</head>
+<body class="profile-page user-profile-bg">
+
+    <!-- ============================== -->
+    <!-- TOP NAVIGATION BAR             -->
+    <!-- ============================== -->
+    <header class="top-nav">
+        <div class="nav-left">
+            <div class="profile-dropdown">
+                <div class="profile-icon" id="profile-icon">
+                    <img src="images/meliodas.png" alt="User Profile">
+                </div>
+                <div class="dropdown-menu hidden" id="dropdown-menu">
+                    <a href="userprofile.html">👤 User Profile</a>
+                    <a href="library.html">📚 Library</a>
+                    <a href="settings.html">⚙️ Settings</a>
+                    <div class="dropdown-divider"></div>
+                    <a href="Login.html" class="logout-link">🚪 Logout</a>
+                </div>
+            </div>
+            <span class="nav-brand">SquadSync</span>
+        </div>
+
+        <div class="nav-center">
+            <a href="profile.html">HOME</a>
+            <a href="about.html">ABOUT</a>
+            <a href="lobby.html">LOBBY</a>
+            <a href="findmatch.html">FIND MATCH</a>
+            <a href="chat.html">CHAT</a>
+        </div>
+
+        <div class="nav-right"></div>
+    </header>
+
+    <!-- ============================== -->
+    <!-- ORDER PAGE                     -->
+    <!-- ============================== -->
+    <main class="order-main">
+
+        <!-- Page Header -->
+        <div class="order-header">
+            <h1>🛒 Order Now</h1>
+            <p>Choose your plan and unlock premium SquadSync features.</p>
+        </div>
+
+        <!-- Two-Column Layout: Left = Selection, Right = Summary -->
+        <div class="order-container">
+
+            <!-- LEFT: Selection Panel -->
+            <div class="order-left">
+
+                <!-- Step 1: Choose Your Game -->
+                <div class="order-section glass-card">
+                    <h2>1. Choose Your Game</h2>
+                    <p class="section-desc">Pick the game you'd like premium features for.</p>
+
+                    <div class="game-picker">
+                        <label class="game-option">
+                            <input type="radio" name="game" value="Valorant" data-price="9.99">
+                            <div class="game-option-content">
+                                <span class="game-emoji">🎯</span>
+                                <div>
+                                    <h4>Valorant</h4>
+                                    <small>Competitive FPS</small>
+                                </div>
+                            </div>
+                        </label>
+
+                        <label class="game-option">
+                            <input type="radio" name="game" value="Minecraft" data-price="7.99">
+                            <div class="game-option-content">
+                                <span class="game-emoji">⛏️</span>
+                                <div>
+                                    <h4>Minecraft</h4>
+                                    <small>Sandbox Survival</small>
+                                </div>
+                            </div>
+                        </label>
+
+                        <label class="game-option">
+                            <input type="radio" name="game" value="League of Legends" data-price="11.99">
+                            <div class="game-option-content">
+                                <span class="game-emoji">⚔️</span>
+                                <div>
+                                    <h4>League of Legends</h4>
+                                    <small>MOBA Strategy</small>
+                                </div>
+                            </div>
+                        </label>
+
+                        <label class="game-option">
+                            <input type="radio" name="game" value="Apex Legends" data-price="10.99">
+                            <div class="game-option-content">
+                                <span class="game-emoji">🚀</span>
+                                <div>
+                                    <h4>Apex Legends</h4>
+                                    <small>Battle Royale</small>
+                                </div>
+                            </div>
+                        </label>
+                    </div>
+                </div>
+
+                <!-- Step 2: Choose Your Plan -->
+                <div class="order-section glass-card">
+                    <h2>2. Choose Your Plan</h2>
+                    <p class="section-desc">Upgrade to unlock exclusive squad features.</p>
+
+                    <div class="plan-picker">
+                        <label class="plan-option">
+                            <input type="radio" name="plan" value="Standard" data-multiplier="1" checked>
+                            <div class="plan-option-content">
+                                <h4>Standard</h4>
+                                <p>Access to basic matchmaking and chat.</p>
+                                <span class="plan-badge">Base Price</span>
+                            </div>
+                        </label>
+
+                        <label class="plan-option">
+                            <input type="radio" name="plan" value="Premium" data-multiplier="2">
+                            <div class="plan-option-content">
+                                <h4>Premium</h4>
+                                <p>Priority matchmaking + exclusive badges.</p>
+                                <span class="plan-badge highlight">2× Price</span>
+                            </div>
+                        </label>
+
+                        <label class="plan-option">
+                            <input type="radio" name="plan" value="Pro" data-multiplier="3">
+                            <div class="plan-option-content">
+                                <h4>Pro</h4>
+                                <p>All Premium features + 1-on-1 coaching.</p>
+                                <span class="plan-badge legendary">3× Price</span>
+                            </div>
+                        </label>
+                    </div>
+                </div>
+
+                <!-- Step 3: Payment Details -->
+                <div class="order-section glass-card">
+                    <h2>3. Payment Details</h2>
+                    <p class="section-desc">Enter your card information (prototype only — no real charges).</p>
+
+                    <div class="payment-form">
+                        <div class="setting-row">
+                            <label for="card-name">Cardholder Name</label>
+                            <input type="text" id="card-name" placeholder="John Doe" required>
+                        </div>
+
+                        <div class="setting-row">
+                            <label for="card-number">Card Number</label>
+                            <input type="text" id="card-number" placeholder="1234 5678 9012 3456" maxlength="19" required>
+                        </div>
+
+                        <div class="payment-row">
+                            <div class="setting-row">
+                                <label for="card-expiry">Expiry</label>
+                                <input type="text" id="card-expiry" placeholder="MM/YY" maxlength="5" required>
+                            </div>
+                            <div class="setting-row">
+                                <label for="card-cvc">CVC</label>
+                                <input type="text" id="card-cvc" placeholder="123" maxlength="4" required>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+            <!-- RIGHT: Order Summary -->
+            <div class="order-right">
+                <div class="summary-card glass-card">
+                    <h2>Order Summary</h2>
+
+                    <div class="summary-row">
+                        <span>Game</span>
+                        <strong id="summary-game">—</strong>
+                    </div>
+
+                    <div class="summary-row">
+                        <span>Plan</span>
+                        <strong id="summary-plan">Standard</strong>
+                    </div>
+
+                    <div class="summary-row">
+                        <span>Base Price</span>
+                        <strong id="summary-base">$0.00</strong>
+                    </div>
+
+                    <div class="summary-row">
+                        <span>Plan Multiplier</span>
+                        <strong id="summary-multiplier">× 1</strong>
+                    </div>
+
+                    <div class="summary-divider"></div>
+
+                    <div class="summary-row total-row">
+                        <span>Total</span>
+                        <strong id="summary-total">$0.00</strong>
+                    </div>
+
+                    <button class="btn-purple" id="place-order-btn" style="width: 100%; margin-top: 20px;">
+                        💳 Place Order
+                    </button>
+
+                    <p class="summary-note">🔒 Secure prototype checkout. No real transactions.</p>
+                </div>
+
+                <!-- Success Message (hidden initially) -->
+                <div class="order-success glass-card hidden" id="order-success">
+                    <div class="success-checkmark">✅</div>
+                    <h2>Order Placed!</h2>
+                    <p>Your SquadSync subscription is now active.</p>
+                    <p class="order-id" id="order-id-display">Order #—</p>
+                    <a href="lobby.html" style="text-decoration: none;">
+                        <button class="btn-blue" style="width: 100%; margin-top: 15px;">Return to Lobby</button>
+                    </a>
+                </div>
+            </div>
+
+        </div>
+
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>

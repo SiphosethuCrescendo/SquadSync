@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Squad Chat - SquadSync</title>
+    <link rel="stylesheet" href="login-style.css">
+</head>
+<body class="profile-page chat-page">
+
+    <header class="top-nav">
+        
+        <!-- Left: User Profile Dropdown & Brand -->
+        <div class="nav-left">
+            
+            <!-- User Profile Dropdown -->
+            <div class="profile-dropdown">
+                <!-- The clickable logo/icon -->
+                <div class="profile-icon" id="profile-icon">
+                    <img src="images/meliodas.png" alt="User Profile">
+                </div>
+                
+                <!-- The hidden menu that appears when clicked -->
+                <div class="dropdown-menu hidden" id="dropdown-menu">
+                   <a href="userProfile.html">👤 User Profile</a>
+                    <a href="library.html">📚 Library</a>
+                   <a href="settings.html">⚙️ Settings</a>
+                    <div class="dropdown-divider"></div>
+                    <a href="Login.html" class="logout-link">🚪 Logout</a>
+                </div>
+            </div>
+
+            <!-- Brand Name -->
+            <span class="nav-brand">SquadSync</span>
+        </div>
+
+        <!-- Center: Navigation Links -->
+        <div class="nav-center">
+            <a href="profile.html">HOME</a>
+            <a href="about.html">ABOUT</a>
+            <a href="lobby.html" class="active">LOBBY</a>
+            <a href="findmatch.html">FIND MATCH</a>
+            <a href="chat.html">CHAT</a>
+        </div>
+
+        <!-- Right: Empty div to keep the center links perfectly centered -->
+        <div class="nav-right">
+        </div>
+
+    </header>
+    
+    <main class="hero-section">
+        <div class="glass-card">
+            <h1>Squad Chat</h1>
+            <p id="chat-status">Loading your squad...</p>
+            
+            <div id="chat-box"></div>
+            
+            <div class="chat-input-area">
+                <button id="icebreaker-btn" class="btn-blue" style="font-size: 0.8rem; padding: 12px 15px;">💡 Icebreaker</button>
+                <input type="text" id="chat-input" placeholder="Type your message here...">
+                <button id="send-chat-btn" class="btn-purple" style="padding: 12px 25px;">Send</button>
+            </div>
+        </div>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>

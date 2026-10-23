@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Library - SquadSync</title>
+    <link rel="stylesheet" href="login-style.css">
+</head>
+<body class="profile-page user-profile-bg">
+
+    <!-- ============================== -->
+    <!-- TOP NAVIGATION BAR             -->
+    <!-- ============================== -->
+    <header class="top-nav">
+        <div class="nav-left">
+            <div class="profile-dropdown">
+                <div class="profile-icon" id="profile-icon">
+                   <img src="images/meliodas.png" alt="User Profile">
+                </div>
+                <div class="dropdown-menu hidden" id="dropdown-menu">
+                    <a href="userprofile.html">👤 User Profile</a>
+                    <a href="library.html">📚 Library</a>
+                    <a href="settings.html">⚙️ Settings</a>
+                    <div class="dropdown-divider"></div>
+                    <a href="Login.html" class="logout-link">🚪 Logout</a>
+                </div>
+            </div>
+            <span class="nav-brand">SquadSync</span>
+        </div>
+
+        <div class="nav-center">
+            <a href="profile.html">HOME</a>
+            <a href="about.html">ABOUT</a>
+            <a href="lobby.html">LOBBY</a>
+            <a href="findmatch.html">FIND MATCH</a>
+            <a href="chat.html">CHAT</a>
+        </div>
+
+        <div class="nav-right"></div>
+    </header>
+
+    <!-- ============================== -->
+    <!-- LIBRARY PAGE                    -->
+    <!-- ============================== -->
+    <main class="library-main">
+
+        <!-- Top Action Bar (Order Now + Add to Cart) -->
+        <div class="library-action-bar">
+            <button class="btn-purple" id="order-now-btn">🛒 Order Now</button>
+            <button class="btn-blue" id="add-to-cart-btn">➕ Add to Cart</button>
+        </div>
+
+        <!-- Page Header -->
+        <div class="library-header">
+            <h1>Game Library</h1>
+            <p>Discover your next adventure from our extensive collection.</p>
+        </div>
+
+        <!-- Splash Banner -->
+        <div class="splash-banner">
+            <div class="splash-image">
+                <img src="images/jump.jpg" alt="Jump Force">
+                <div class="splash-overlay">
+                    <span class="coming-soon">Coming Soon</span>
+                    <p class="splash-sub">A new adventure awaits...</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Row 1: New Releases -->
+        <div class="library-row">
+            <div class="row-header">
+                <h2>New Releases</h2>
+                <a href="#" class="view-all">View All →</a>
+            </div>
+            <div class="row-scroll">
+                <div class="game-card">
+                    <div class="game-image"><img src="images/nanatsu.jpg" alt="Game"></div>
+                    <div class="game-info">
+                        <h4>The Seven Deadly Sins</h4>
+                        <span class="game-meta">New · RPG</span>
+                    </div>
+                </div>
+                <div class="game-card" data-game="Dragon Ball Sparkling Zero" onclick="window.location.href='gamedetail.html?game=Dragon%20Ball%20Sparkling%20Zero'">
+                    <div class="game-image"><img src="images/dbz.jpg" alt="Game"></div>
+                    <div class="game-info">
+                        <h4>Dragon Ball Sparkling Zero</h4>
+                        <span class="game-meta">New · Fighting</span>
+                    </div>
+                </div>
+                <div class="game-card">
+                    <div class="game-image"><img src="images/devil.jpg" alt="Game"></div>
+                    <div class="game-info">
+                        <h4>Devil May Cry 5</h4>
+                        <span class="game-meta">New · Action</span>
+                    </div>
+                </div>
+                <div class="game-card">
+                    <div class="game-image"><img src="images/leveling.jpg" alt="Game"></div>
+                    <div class="game-info">
+                        <h4>Solo Leveling</h4>
+                        <span class="game-meta">New · Adventure</span>
+                    </div>
+                </div>
+                <div class="game-card">
+                    <div class="game-image"><img src="images/fairy.jpg" alt="Game"></div>
+                    <div class="game-info">
+                        <h4>Fairy Tail</h4>
+                        <span class="game-meta">New · JRPG</span>
+                    </div>
+                </div>
+                <div class="game-card">
+                    <div class="game-image"><img src="images/kombat.jpg" alt="Game"></div>
+                    <div class="game-info">
+                        <h4>Mortal Kombat</h4>
+                        <span class="game-meta">New · Fighting</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Row 2: Most Downloaded -->
+        <div class="library-row">
+            <div class="row-header">
+                <h2>⬇️ Most Downloaded</h2>
+                <a href="#" class="view-all">View All →</a>
+            </div>
+            <div class="row-scroll">
+                <div class="game-card">
+                    <div class="game-image"><img src="images/batman.jpg" alt="Game"></div>
+                    <div class="game-info">
+                        <h4>Batman Arkham</h4>
+                        <span class="game-meta">4.8 · 2.3M DL</span>
+                    </div>
+                </div>
+                <div class="game-card">
+                    <div class="game-image"><img src="images/kombat.jpg" alt="Game"></div>
+                    <div class="game-info">
+                        <h4>Mortal Kombat</h4>
+                        <span class="game-meta">4.7 · 1.8M DL</span>
+                    </div>
+                </div>
+                <div class="game-card">
+                    <div class="game-image"><img src="images/devil.jpg" alt="Game"></div>
+                    <div class="game-info">
+                        <h4>Devil May Cry 5</h4>
+                        <span class="game-meta">4.9 · 1.5M DL</span>
+                    </div>
+                </div>
+                <div class="game-card">
+                    <div class="game-image"><img src="images/COD.jpg" alt="Game"></div>
+                    <div class="game-info">
+                        <h4>Call Of Duty Black Ops III</h4>
+                        <span class="game-meta">4.6 · 1.2M DL</span>
+                    </div>
+                </div>
+                <div class="game-card">
+                    <div class="game-image"><img src="images/leveling.jpg" alt="Game"></div>
+                    <div class="game-info">
+                        <h4>Solo Leveling</h4>
+                        <span class="game-meta">4.8 · 980K DL</span>
+                    </div>
+                </div>
+                <div class="game-card">
+                    <div class="game-image"><img src="images/fifa 26.jpg" alt="Game"></div>
+                    <div class="game-info">
+                        <h4>FIFA 26</h4>
+                        <span class="game-meta">4.8 · 980K DL</span>
+                    </div>
+                </div>
+                <div class="game-card">
+                    <div class="game-image"><img src="images/fortnite.jpg" alt="Game"></div>
+                    <div class="game-info">
+                        <h4>Fortnite</h4>
+                        <span class="game-meta">4.8 · 980K DL</span>
+                    </div>
+                </div>
+                <div class="game-card">
+                    <div class="game-image"><img src="images/fifa25.jpg" alt="Game"></div>
+                    <div class="game-info">
+                        <h4>FIFA 25</h4>
+                        <span class="game-meta">4.5 · 750K DL</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Row 3: Trending -->
+        <div class="library-row">
+            <div class="row-header">
+                <h2>🔥 Trending</h2>
+                <a href="#" class="view-all">View All →</a>
+            </div>
+            <div class="row-scroll">
+                <div class="game-card">
+                    <div class="game-image"><img src="images/GOW.jpg" alt="Game"></div>
+                    <div class="game-info">
+                        <h4>God Of War</h4>
+                        <span class="game-meta">Hot · 12.4K players</span>
+                    </div>
+                </div>
+                <div class="game-card">
+                    <div class="game-image"><img src="images/GTA5.jpg" alt="Game"></div>
+                    <div class="game-info">
+                        <h4>Grand Theft Auto VI</h4>
+                        <span class="game-meta">Hot · 9.8K players</span>
+                    </div>
+                </div>
+                <div class="game-card">
+                    <div class="game-image"><img src="images/jujutsu.jpg" alt="Game"></div>
+                    <div class="game-info">
+                        <h4>Jujutsu Kaisen</h4>
+                        <span class="game-meta">Hot · 8.2K players</span>
+                    </div>
+                </div>
+                <div class="game-card">
+                    <div class="game-image"><img src="images/MostWanted.jpg" alt="Game"></div>
+                    <div class="game-info">
+                        <h4>Need For Speed: Most Wanted</h4>
+                        <span class="game-meta">Hot · 7.5K players</span>
+                    </div>
+                </div>
+                <div class="game-card">
+                    <div class="game-image"><img src="images/Tekken.jpg" alt="Game"></div>
+                    <div class="game-info">
+                        <h4>Tekken 8</h4>
+                        <span class="game-meta">Hot · 6.3K players</span>
+                    </div>
+                </div>
+                <div class="game-card">
+                    <div class="game-image"><img src="images/sekiro.jpg" alt="Game"></div>
+                    <div class="game-info">
+                        <h4>Sekiro</h4>
+                        <span class="game-meta">Hot · 5.1K players</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>

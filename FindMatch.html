@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Finding Match - SquadSync</title>
+    <link rel="stylesheet" href="login-style.css">
+</head>
+<body class="profile-page">
+
+    <header class="top-nav">
+        <div class="nav-left">
+            <div class="profile-dropdown">
+                <div class="profile-icon" id="profile-icon">
+                   <img src="images/meliodas.png" alt="User Profile">
+                </div>
+                <div class="dropdown-menu hidden" id="dropdown-menu">
+                    <a href="userProfile.html">👤 User Profile</a>
+                   <a href="library.html">📚 Library</a>
+                    <a href="settings.html">⚙️ Settings</a>
+                    <div class="dropdown-divider"></div>
+                    <a href="Login.html" class="logout-link">🚪 Logout</a>
+                </div>
+            </div>
+            <span class="nav-brand">SquadSync</span>
+        </div>
+
+        <div class="nav-center">
+            <a href="profile.html">HOME</a>
+            <a href="about.html">ABOUT</a>
+            <a href="lobby.html">LOBBY</a>
+            <a href="findmatch.html" class="active">FIND MATCH</a>
+            <a href="chat.html">CHAT</a>
+        </div>
+
+        <div class="nav-right"></div>
+    </header>
+
+    <main class="loading-main">
+        <div class="loading-container">
+            
+            <div class="spinner"></div>
+            
+            <h1 id="loading-title">Searching for Players...</h1>
+            <p id="loading-subtitle">Scanning for compatible squadmates based on your Vibe Profile</p>
+            
+            <div class="progress-bar-container">
+                <div class="progress-bar-fill" id="progress-bar"></div>
+            </div>
+            
+            <p id="loading-status" class="loading-status">Checking game preferences...</p>
+            
+            <div id="success-message" class="hidden">
+                <div class="success-icon">✅</div>
+                <h2>Match Found!</h2>
+                <p>Returning to your lobby...</p>
+            </div>
+
+        </div>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>

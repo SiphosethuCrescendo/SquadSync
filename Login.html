@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SquadSync - sign up</title>
+    <!-- Make sure this matches your CSS file name exactly -->
+    <link rel="stylesheet" href="login-style.css">
+</head>
+<body>
+
+    <!-- Main Container for Split Screen -->
+    <div class="login-container">
+        
+        <!-- Left Side: The Robot Image -->
+        <div class="image-side">
+            <!-- Using an IMG tag instead of background-image -->
+            <img src="images/robot-removebg-preview.png" alt="Futuristic Glitch Robot" class="robot-img">
+        </div>
+
+        <!-- Right Side: The Login Form -->
+        <div class="form-side">
+            <div class="login-box">
+                <h1 class="logo">SQUAD<span>SYNC</span></h1>
+                <h2>Welcome Back</h2>
+                
+                <form id="login-form">
+                    <label for="email">Email address</label>
+                    <input type="email" id="email" placeholder="example@gmail.com" required>
+
+                    <label for="password">Password</label>
+                    <input type="password" id="password" placeholder="********" required>
+
+                    <a href="#" class="forgot-password">Forgot Password?</a>
+
+                    <button type="submit" class="login-btn">Login</button>
+                </form>
+
+                <p class="signup-link">Are You New Member? <a href="profile.html">Sign Up</a></p>
+            </div>
+        </div>
+
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
